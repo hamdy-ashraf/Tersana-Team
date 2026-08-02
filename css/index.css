@@ -1,0 +1,770 @@
+header nav {
+  height: 20%;
+  /* background-color: #09c; */
+}
+
+header nav .container {
+  height: 100%;
+}
+
+header nav .container .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header nav .container .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+header nav .navbar-collapse ul li a {
+  font-size: 30px;
+  padding: 0;
+  overflow: hidden;
+}
+
+header nav .navbar-collapse ul li a::before,
+header nav .navbar-collapse ul li a span.shape,
+header nav .navbar-collapse ul li a::after {
+  content: "";
+  display: block;
+  background-color: #870;
+  width: 100%;
+  height: calc(100% / 3);
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+header nav .navbar-collapse ul li a span.shape {
+  top: calc(100% / 3);
+  left: 100%;
+}
+
+header nav .navbar-collapse ul li a::before,
+header nav .navbar-collapse ul li a::after {
+  left: -100%;
+}
+
+header nav .navbar-collapse ul li a::after {
+  bottom: 0;
+}
+
+header nav .navbar-collapse ul li:hover a::before,
+header nav .navbar-collapse ul li:hover a span.shape,
+header nav .navbar-collapse ul li:hover a::after {
+  left: 0;
+}
+
+header #carouselExampleCaptions .carousel-indicators button {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+header .carousel-inner .carousel-item:nth-of-type(1) {
+  background-image: url("../team_images/RECTIFY_IMG_20260728_163852_4.jpg.jpeg");
+}
+
+header .carousel-inner .carousel-item:nth-of-type(2) {
+  background-image: url("../team_images/RECTIFY_IMG_20260728_163852_3.jpg.jpeg");
+}
+
+header .carousel-inner .carousel-item:nth-of-type(3) {
+  background-image: url("../team_images/RECTIFY_IMG_20260728_163415.jpg.jpeg");
+  background-position: 30% 30%;
+}
+
+header .carousel-inner .carousel-item:nth-of-type(4) {
+  background-image: url("../team_images/RECTIFY_IMG_20260728_163852_2.jpg.jpeg");
+  background-position: 30% 30%;
+}
+
+header .carousel-inner .carousel-item:nth-of-type(5) {
+  background-image: url("../team_images/WhatsApp\ Image\ 2026-07-29\ at\ 1.40.02\ AM.jpeg");
+  /* background-position: 30% 30%; */
+}
+
+header .carousel-inner .carousel-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .carousel-inner .carousel-item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+header .carousel-inner .carousel-item .carousel-caption {
+  position: initial;
+  width: 50%;
+}
+
+header .carousel-inner .carousel-item .carousel-caption h2 {
+  transform: translateX(-70px);
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+header .carousel-inner .carousel-item.active .carousel-caption h2 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+header .carousel-inner .carousel-item .carousel-caption p {
+  transform: translateX(70px);
+  opacity: 0;
+  font-size: 23px;
+  margin-top: 20px;
+  transition-duration: 1s;
+  transition-delay: 0.3s;
+}
+
+header .carousel-inner .carousel-item.active .carousel-caption p {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+header .carousel-inner .carousel-item .buttons {
+  transform: translateY(70px);
+  opacity: 0;
+  transition-duration: 1s;
+  transition-delay: 0.6s;
+}
+
+header .carousel-inner .carousel-item.active .buttons {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+header .carousel-inner .carousel-item .buttons a {
+  padding: 10px 15px;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  background-color: #0A66C2;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  border: none;
+}
+
+header .carousel-inner .carousel-item .buttons a::before,
+header .carousel-inner .carousel-item .buttons a::after {
+    content: "";
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to right, #554023, #c99846);
+    position: absolute;
+    left: 0;
+    transition-duration: .5s;
+}
+
+header .carousel-inner .carousel-item .buttons a::before {
+    top: 0%;
+    transform: translateY(-100%);
+}
+
+header .carousel-inner .carousel-item .buttons a::after {
+    bottom: 0%;
+    transform: translateY(100%);
+}
+
+header .carousel-inner .carousel-item .buttons a:hover::before,
+header .carousel-inner .carousel-item .buttons a:hover::after {
+    transform: translateY(0);
+}
+
+header .carousel-inner .carousel-item .buttons a span {
+  position: relative;
+  z-index: 2;
+}
+
+#About {
+    background-color: #151515;
+}
+
+#About .container .part p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#About .container .box .content .image {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#About .container .box .content .image .items {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition-duration: 1s;
+}
+
+#About .container .box .content .image:hover .items {
+  top: 0;
+}
+
+#About .container .box .content .text {
+  transform: translateY(-30px);
+  text-align: center;
+  padding-block: 5px;
+  background-color: #144;
+  color: #fff;
+  width: 100%;
+  transform: translateX(100%);
+}
+
+#About .container .box:hover .content .text {
+  transform: translateX(0);
+  transition-duration: 1s;
+  transition-delay: 1s;
+}
+
+#About .container .box .content .icons {
+  display: flex; /* Why !!! */
+  column-gap: 20px;
+  transform: translateY(0px);
+}
+
+#About .container .box .content .icons i {
+  background-color: #fff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+#About .container .box .content .icons i[class*="facebook"] {
+  color: #1877f2;
+}
+
+#About .container .box .content .icons i[class*="whatsapp"] {
+  color: #25d366;
+}
+
+#About .container .box .content .icons i[class*="instagram"] {
+  color: #e4405f;
+}
+
+#About .container .box .content .icons i[class*="twitter"] {
+  color: #1da1f2;
+}
+
+#About .container .box .content .icons a:nth-of-type(1) i,
+#About .container .box .content .icons a:nth-of-type(3) i {
+  transform: translateY(-50px);
+}
+#About .container .box .content .icons a:nth-of-type(2) i,
+#About .container .box .content .icons a:nth-of-type(4) i {
+  transform: translateY(50px);
+}
+
+#About .container .box:hover .content .icons a i {
+  /* why mention anchor !!!!!! */
+  transform: translateY(0);
+  opacity: 1;
+  transition-duration: 1s;
+  transition-delay: 1.8s;
+}
+
+#About .container .box .content .image .button::before,
+#About .container .box .content .image .button::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-width: 24px;
+    border-color: #c99846 transparent #c99846 #c99846 ;
+    border-style: solid;
+    position: absolute;
+    top: 0;    
+    left: 0;
+    transition-duration: .5s;
+}
+
+#About .container .box .content .image .button::before {
+    left: -100%;
+    border-color: #c99846 transparent #c99846 #c99846;
+}
+
+#About .container .box .content .image .button button span {
+    position: relative;
+    z-index: 2;
+}
+
+#About .container .box .content .image .button::after {
+    left: 100%;
+    border-color: #c99846 #c99846 #c99846 transparent;
+}
+
+#About .container .box .content .image .button:hover::before,
+#About .container .box .content .image .button:hover::after {
+    left: 0;
+}
+
+#About .container .box .content .image .button {
+    transform: translateY(-30px) rotate(0);
+    opacity: 0;
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+
+#About .container .box .content .image:hover .button {
+    transform: translateY(-30px) rotate(720deg);
+    opacity: 1;
+    transition-duration: 1s;
+    transition-delay: 2.3s;
+}
+
+#About .container .box .content .image .button button {
+  background-color: var(--bs-primary);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+#About .container .box .content .button button i {
+  font-size: 18px;
+  transition-duration: 0.25s;
+}
+
+#About .container .box .content .button button:hover i {
+  margin-left: 5px;
+}
+
+#Achievements {
+    background-image: url("../team_images/RECTIFY_IMG_20260728_163852_3.jpg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Achievements::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Achievements::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Achievements .container-fluid {
+    height: 510px;
+    position: relative;
+} 
+
+#Achievements .container-fluid .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: card-animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-fill-mode: backwards;
+}
+
+#Achievements .container-fluid:hover .box {
+    animation-play-state: paused;
+}
+
+#Achievements .container-fluid .box:nth-of-type(2) {
+    animation-delay: 5s;
+}
+
+#Achievements .container-fluid .box:nth-of-type(3) {
+    animation-delay: 10s;
+    
+}
+
+#Achievements .container-fluid .box:nth-of-type(4) {
+    animation-delay: 15s;
+}
+
+#Achievements .container-fluid .box img {
+    max-width: 50%;
+    margin: auto;
+    display: block;
+}
+
+#Achievements .container-fluid .box .logo {
+    width: fit-content;
+}
+
+#Achievements .container-fluid .box .image {
+    background-image: url("../team_images/WhatsApp\ Image\ 2026-07-30\ at\ 11.55.20\ PM.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#Achievements .container-fluid .box .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Achievements .container-fluid .box .image img {
+    position: relative;
+}
+
+#Servieces .s-card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Servieces img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+
+}
+
+#Servieces .s-card .text {
+    background-color: #000;
+}
+
+#Servieces .s-card .text i,
+#Servieces .s-card .text h5,
+#Servieces .s-card .text h3,
+#Servieces .s-card .text p {
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+#Servieces .s-card .text::before {
+    content: "";
+    width: 70%;
+    height: 200%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: -145%;
+    transition-duration: 1s;
+    transform: rotate(30deg) translateY(-50%);
+}
+
+#Servieces .s-card:hover .text::before {
+    left: 0;
+    top: 30%;
+}
+
+
+
+#Servieces i[class*="animation"] {
+    animation-name: swim-animate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+#Race {
+    background-image: url("../team_images/file_00000000bba082469fd3ac3ad5440204.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Race::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#Race .title {
+    position: relative;
+
+}
+
+#Race .title h2 {
+    text-shadow: 3px 3px 5px #fff;
+    font-size: 60px;
+}
+
+#Race .title h4 {
+    text-shadow: 4px 4px 5px  #fff;
+}
+
+#Race .title h4 span.text1 {
+    color: #00cfff;
+}
+
+#Race .title h4 span.text2 {
+    color: #ffd700;
+}
+
+#Race .title h2,
+#Race .title h4 {
+    word-spacing: 10px;
+}
+
+#Race .icon {
+    font-size: 80px;
+    text-align: center;
+    color: #e4405f;
+    position: relative;
+}
+
+#Race .icon i {
+    color: #cd7f32;
+    cursor: pointer;
+}
+
+#Race .modal-dialog {
+    max-width: 700px;         /* why */
+}  
+
+/* .form-group => do not respect :hover and :foucs */
+
+#Contact .form-group textarea {
+    resize: none;
+} 
+
+#Contact .form-group button {
+    padding: 10px 20px;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    transition-duration: .5s;
+}
+
+#Contact .form-group button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+#Contact .part {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#Contact .icons {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    
+}
+
+#Contact label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#Contact label .content .box,
+#Contact label~.media .box  {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    background-color: #fff;
+    border: 3px solid #ffd700;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+#Contact label .content .box i,
+#Contact label~.media .box i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 4.5s;
+}
+
+#Contact label .content>.box {
+    position: relative;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+}
+
+#Contact input:checked~label .content>.box i {
+    transform: rotate(720deg);
+}
+
+#Contact input:checked label .content>.box i {
+}
+
+#Contact input:checked~label~.media .box:nth-of-type(1) {
+    top: 0%;
+    left: 0%;
+    transform: translate(0, 0); 
+
+}
+
+#Contact label~.media .box:nth-of-type(1) {
+    color: #1877F2;
+}
+
+#Contact label~.media .box:nth-of-type(2) {
+    color: #E4405F;
+    transition-delay: .6s;
+}
+
+#Contact label~.media .box:nth-of-type(3) {
+    color: #25D366;
+    transition-delay: 1.2s;
+}
+
+#Contact label~.media .box:nth-of-type(4) {
+    color: #1DA1F2;
+    transition-delay: 1.8s;
+}
+
+#Contact label~.media .box:nth-of-type(5) {
+    color:  #131418;
+    transition-delay: 2.4s;
+}
+
+#Contact label~.media .box:nth-of-type(6) {
+    color: #CD201F;
+    transition-delay: 3s;
+
+}
+
+#Contact label~.media .box:nth-of-type(7) {
+    color: #0A66C2;
+    transition-delay: 3.6s;
+}
+
+#Contact label~.media .box:nth-of-type(8) {
+    color:;
+    transition-delay: 4.2s;
+}
+
+#Contact label~.media .box:nth-of-type(1) i {
+    color: #1877F2;
+}
+
+#Contact label~.media .box:nth-of-type(2) i {
+    color: #E4405F;
+}
+
+#Contact label~.media .box:nth-of-type(3) i {
+    color: #25D366;
+}
+
+#Contact label~.media .box:nth-of-type(4) i {
+    color: #1DA1F2;  
+}
+
+#Contact label~.media .box:nth-of-type(5) i {
+    color:  #131418; 
+}
+
+#Contact label~.media .box:nth-of-type(6) i {
+    color: #CD201F;
+}
+
+#Contact label~.media .box:nth-of-type(7) i {
+    color: #0A66C2;  
+}
+
+#Contact label~.media .box:nth-of-type(8) i {
+    color: #f00;  
+}
+
+#Contact input:checked~label~.media .box:nth-of-type(2) {
+    top: 0;
+}
+
+#Contact input:checked~label~.media .box:nth-of-type(3) {
+    transform: translate(-100%, 0); 
+    top: 0%;
+    left: 100%;
+}
+
+#Contact input:checked~label~.media .box:nth-of-type(4) {
+    left: 100%;
+}
+
+#Contact input:checked~label~.media .box:nth-of-type(5) {
+    transform: translate(-100%, -100%); 
+    top: 100%;
+    left: 100%;
+}
+
+#Contact input:checked~label~.media .box:nth-of-type(6) {
+    transform: translate(-50%, -50%); 
+    top: 100%;
+
+}
+
+#Contact input:checked~label~.media .box:nth-of-type(7) {
+    transform: translate(0, -100%); 
+    top: 100%;
+    left: 0;
+}
+
+#Contact input:checked~label~.media .box:nth-of-type(8) {
+    transform: translate(-50%, -50%); 
+    left: 0;
+}
+
+
+
+#Contact input:checked~label .content i {
+    /* color: #00f; */
+}

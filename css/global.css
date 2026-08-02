@@ -1,0 +1,64 @@
+body {
+    /* height: 5000px; */
+    font-family: "Oswald", sans-serif;
+}
+
+section {
+    padding-block: 40px;
+    color: #fff;
+    background-color: #151515;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sansita Swashed", system-ui;
+}
+
+p {
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.title {
+    width: fit-content;
+}
+
+/* .title::before {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 3px;
+    background-color: #e4405f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    animation-name: title-animate;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+} */
+
+.title h2 {
+    /* background-color: #151515; */
+    border: 1px solid transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+.arrow {
+    bottom: 10px;
+    right: 10px;
+    z-index: 4;
+}
+
+
+

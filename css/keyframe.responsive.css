@@ -1,0 +1,51 @@
+@media (max-width: 1300px) {
+    @keyframes card-animation {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        75% {
+            left: 100%;
+            transform: translateX(100%);
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {}
+
+@media (min-width: 577px) and (max-width: 1300px) {}
+
+@media (min-width: 791px) and (max-width: 1300px) {
+    @keyframes card-animation {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        75% {
+            left: 100%;
+            transform: translateX(100%);
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    @keyframes card-animation {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {}
