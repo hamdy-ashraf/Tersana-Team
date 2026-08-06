@@ -29,24 +29,7 @@ p {
     width: fit-content;
 }
 
-/* .title::before {
-    content: "";
-    display: block;
-    width: 20%;
-    height: 3px;
-    background-color: #e4405f;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(0, 0);
-    animation-name: title-animate;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-} */
-
 .title h2 {
-    /* background-color: #151515; */
     border: 1px solid transparent;
 }
 

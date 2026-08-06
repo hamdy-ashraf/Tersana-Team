@@ -34,6 +34,11 @@
         font-size: 14px;
     }
 
+    header .carousel-inner .carousel-item .buttons a {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
     #About .container .part p {
         font-size: 16px;
     }
@@ -52,7 +57,10 @@
     #About .container .box .content .image .button button {
         padding: 5px 5px;
         font-size: 15px;
-        /* width: 80%; */
+    }
+
+    #About .container .box .content .image:hover .button {
+        transform: translateY(-15px) rotate(720deg);
     }
 
     #About .container .box .content .image .button button i {
@@ -114,11 +122,29 @@
     #Contact label .content>.box {
         /* font-size: 30px; */
     }
+
+    #Contact .form-group button {
+        font-size: 20px;
+    }
+
+    #Contact .click  {
+        transform: translateX(25%);
+    }
 }
 
 @media (min-width: 371px) and (max-width: 1300px) {}
 
 @media (min-width: 577px) and (max-width: 1300px) {
+    header .carousel-inner .carousel-item .carousel-caption p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    header .carousel-inner .carousel-item .buttons a {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
     #About .container .box .content {
         width: 450px;
     }
@@ -145,6 +171,10 @@
     #Servieces .s-card {
         width: initial;
     }
+
+    #Race .modal-dialog {
+        width: 90%;         /* why */
+    } 
 
     #Contact .icons {
         width: 250px;
@@ -215,6 +245,10 @@
     #Race .title h4 span {
         display: initial;
     }
+
+    #Contact .form-group button {
+        font-size: 25px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1300px) {
@@ -224,8 +258,17 @@
         border-radius: 0;
     }
 
+    header nav .navbar-collapse ul li a span.text {
+        font-size: 25px;
+    }
+
     header .carousel-inner .carousel-item .carousel-caption {
         width: 50%;
+    }
+
+    header .carousel-inner .carousel-item .buttons a {
+        padding: 5px 10px;
+        font-size: 25px;
     }
 
     #About .container .box .content {
@@ -233,7 +276,7 @@
     }
 
     #Achievements .container-fluid {
-        height: 481.3px;
+        height: 485px;
     }
 
     #Achievements .container-fluid .box {
@@ -269,6 +312,10 @@
         height: 60px;
         font-size: 35px;
     } 
+
+    #Contact .click  {
+        transform: translateX(30%);
+    }
 }
 
 @media (min-width: 1181px) and (max-width: 1300px) {}
