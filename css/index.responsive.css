@@ -296,6 +296,10 @@
         animation-delay: 15s;
     }
 
+    #Servieces .s-card .text::before{
+        transform: rotate(25deg) translateY(-50%);
+    }
+
     #Race .title h2 {
         font-size: 60px;
     }

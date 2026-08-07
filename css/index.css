@@ -1,6 +1,7 @@
+/* Header Page */
+    /* Navbar */
 header nav {
   height: 20%;
-  /* background-color: #09c; */
 }
 
 header nav .container {
@@ -56,10 +57,18 @@ header nav .navbar-collapse ul li:hover a::after {
   left: 0;
 }
 
+    /* Header Content */
 header #carouselExampleCaptions .carousel-indicators button {
   border-radius: 50%;
   width: 10px;
   height: 10px;
+}
+
+header .carousel-inner .carousel-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100dvh;
 }
 
 header .carousel-inner .carousel-item:nth-of-type(1) {
@@ -82,14 +91,6 @@ header .carousel-inner .carousel-item:nth-of-type(4) {
 
 header .carousel-inner .carousel-item:nth-of-type(5) {
   background-image: url("../team_images/WhatsApp\ Image\ 2026-07-29\ at\ 1.40.02\ AM.jpeg");
-  /* background-position: 30% 30%; */
-}
-
-header .carousel-inner .carousel-item {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100dvh;
 }
 
 header .carousel-inner .carousel-item::before {
@@ -185,15 +186,14 @@ header .carousel-inner .carousel-item .buttons a span {
   z-index: 2;
 }
 
-#About {
-    background-color: #151515;
-}
-
+/* About Section */
+    /* Description Part */
 #About .container .part p {
   font-size: 20px;
   margin-top: 20px;
 }
 
+    /* Image Part */
 #About .container .box .content .image {
   width: 90%;
   margin: auto;
@@ -220,6 +220,7 @@ header .carousel-inner .carousel-item .buttons a span {
   top: 0;
 }
 
+        /* Items Text */
 #About .container .box .content .text {
   transform: translateY(-30px);
   text-align: center;
@@ -236,6 +237,7 @@ header .carousel-inner .carousel-item .buttons a span {
   transition-delay: 1s;
 }
 
+        /* Media Icons */
 #About .container .box .content .icons {
   display: flex; /* Why !!! */
   column-gap: 20px;
@@ -287,6 +289,7 @@ header .carousel-inner .carousel-item .buttons a span {
   transition-delay: 1.8s;
 }
 
+        /* Items Button */
 #About .container .box .content .image .button::before,
 #About .container .box .content .image .button::after {
     content: "";
@@ -354,6 +357,7 @@ header .carousel-inner .carousel-item .buttons a span {
   margin-left: 5px;
 }
 
+/* Achievements Section */
 #Achievements {
     background-image: url("../team_images/RECTIFY_IMG_20260728_163852_3.jpg.jpeg");
     background-position: center;
@@ -378,6 +382,7 @@ header .carousel-inner .carousel-item .buttons a span {
     position: relative;
 } 
 
+    /* Achievements Cards */
 #Achievements .container-fluid .box {
     position: absolute;
     top: 0;
@@ -399,21 +404,17 @@ header .carousel-inner .carousel-item .buttons a span {
 
 #Achievements .container-fluid .box:nth-of-type(3) {
     animation-delay: 10s;
-    
 }
 
 #Achievements .container-fluid .box:nth-of-type(4) {
     animation-delay: 15s;
 }
 
+        /* Cards Images */
 #Achievements .container-fluid .box img {
     max-width: 50%;
     margin: auto;
     display: block;
-}
-
-#Achievements .container-fluid .box .logo {
-    width: fit-content;
 }
 
 #Achievements .container-fluid .box .image {
@@ -438,32 +439,28 @@ header .carousel-inner .carousel-item .buttons a span {
     position: relative;
 }
 
+/* Servieces Section */
+    /* Servieces Cards */
 #Servieces .s-card {
     background-color: #333;
     border-radius: 10px;
     overflow: hidden;
 }
 
-#Servieces img {
+        /* Cards Images */
+#Servieces .s-card .image img {
     width: 100%;
     height: 100%;
     display: block;
     margin: auto;
-
 }
 
+        /* Cards Text */
 #Servieces .s-card .text {
     background-color: #000;
 }
 
-#Servieces .s-card .text i,
-#Servieces .s-card .text h5,
-#Servieces .s-card .text h3,
-#Servieces .s-card .text p {
-    color: #fff;
-    mix-blend-mode: difference;
-}
-
+         /* Mix Colors */
 #Servieces .s-card .text::before {
     content: "";
     width: 70%;
@@ -481,17 +478,25 @@ header .carousel-inner .carousel-item .buttons a span {
     top: 30%;
 }
 
-
-
 #Servieces i[class*="animation"] {
-    animation-name: swim-animate;
+    animation-name: servieces-animate;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-direction: alternate;
+    animation-duration: 4s;
     animation-fill-mode: backwards;
 }
 
+#Servieces .s-card .text i,
+#Servieces .s-card .text h5,
+#Servieces .s-card .text h3,
+#Servieces .s-card .text p {
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+
+
+/* Race Section */
 #Race {
     background-image: url("../team_images/file_00000000bba082469fd3ac3ad5440204.png");
     background-position: center;
@@ -511,18 +516,20 @@ header .carousel-inner .carousel-item .buttons a span {
     background-color: rgba(0, 0, 0, .5);
 }
 
+    /* Race Title */
 #Race .title {
     position: relative;
-
 }
 
 #Race .title h2 {
     text-shadow: 3px 3px 5px #fff;
     font-size: 60px;
+    word-spacing: 10px;
 }
 
 #Race .title h4 {
     text-shadow: 4px 4px 5px  #fff;
+    word-spacing: 10px;
 }
 
 #Race .title h4 span.text1 {
@@ -531,11 +538,6 @@ header .carousel-inner .carousel-item .buttons a span {
 
 #Race .title h4 span.text2 {
     color: #ffd700;
-}
-
-#Race .title h2,
-#Race .title h4 {
-    word-spacing: 10px;
 }
 
 #Race .icon {
@@ -550,10 +552,7 @@ header .carousel-inner .carousel-item .buttons a span {
     cursor: pointer;
 }
 
-#Race .modal {
-    /* position: relative; */
-}
-
+    /* Race Modal */
 #Race .modal-dialog {
     max-width: 700px;         /* why */
     position: relative;
@@ -562,17 +561,10 @@ header .carousel-inner .carousel-item .buttons a span {
     transform: translateY(-50%);
 } 
 
-#Race .modal-content {
-    /* transform: translateY(-50%);
-    position: absolute;
-    top: -50%;
-    left: 0; */
-}
-
-/* .form-group => do not respect :hover and :foucs */
-
+/* Contact Section */
+    /* Form Group */
 #Contact .form-group textarea {
-    resize: none;
+    resize: none;                     /* .form-group => Do not respect :hover and :foucs !!!!!! */
 } 
 
 #Contact .form-group button {
@@ -589,22 +581,7 @@ header .carousel-inner .carousel-item .buttons a span {
     background-color: #fff;
 }
 
-#Contact .part {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-#Contact .arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#Contact img {
-    width: 30%;
-}
-
+    /* Media Part */
 #Contact .icons {
     width: 300px;
     height: 300px;
@@ -617,7 +594,6 @@ header .carousel-inner .carousel-item .buttons a span {
     justify-content: center;
     align-items: center;
 }
-
 
 #Contact label .content .box,
 #Contact label~.media .box  {
@@ -666,46 +642,33 @@ header .carousel-inner .carousel-item .buttons a span {
     top: 0%;
     left: 0%;
     transform: translate(0, 0); 
-
-}
-
-#Contact label~.media .box:nth-of-type(1) {
-    color: #1877F2;
 }
 
 #Contact label~.media .box:nth-of-type(2) {
-    color: #E4405F;
     transition-delay: .6s;
 }
 
 #Contact label~.media .box:nth-of-type(3) {
-    color: #25D366;
     transition-delay: 1.2s;
 }
 
 #Contact label~.media .box:nth-of-type(4) {
-    color: #1DA1F2;
     transition-delay: 1.8s;
 }
 
 #Contact label~.media .box:nth-of-type(5) {
-    color:  #131418;
     transition-delay: 2.4s;
 }
 
 #Contact label~.media .box:nth-of-type(6) {
-    color: #CD201F;
     transition-delay: 3s;
-
 }
 
 #Contact label~.media .box:nth-of-type(7) {
-    color: #0A66C2;
     transition-delay: 3.6s;
 }
 
 #Contact label~.media .box:nth-of-type(8) {
-    color:;
     transition-delay: 4.2s;
 }
 
@@ -764,7 +727,6 @@ header .carousel-inner .carousel-item .buttons a span {
 #Contact input:checked~label~.media .box:nth-of-type(6) {
     transform: translate(-50%, -50%); 
     top: 100%;
-
 }
 
 #Contact input:checked~label~.media .box:nth-of-type(7) {
@@ -778,12 +740,6 @@ header .carousel-inner .carousel-item .buttons a span {
     left: 0;
 }
 
-
-
-#Contact input:checked~label .content i {
-    /* color: #00f; */
-}
-
 #Contact input:not(:checked)~.click {
     opacity: 1;
     transition-duration: 1s;
@@ -794,7 +750,7 @@ header .carousel-inner .carousel-item .buttons a span {
     opacity: 0;
 }
 
-
+    /* Arrow to Media */
 #Contact .click  {
     display: flex;
     justify-content: end;
@@ -803,16 +759,9 @@ header .carousel-inner .carousel-item .buttons a span {
     width: fit-content;
 }
 
-#Contact img {
+#Contact .click img {
     width: 30%;
     background-color: #000;
     mix-blend-mode: darken;
     border-radius: 50%;
-}
-
-.arrow {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
 }
