@@ -30,7 +30,7 @@ header nav .navbar-collapse ul li a span.shape,
 header nav .navbar-collapse ul li a::after {
   content: "";
   display: block;
-  background-color: #870;
+  background-color: #161c4c;
   width: 100%;
   height: calc(100% / 3);
   position: absolute;
@@ -105,6 +105,7 @@ header .carousel-inner .carousel-item::before {
 header .carousel-inner .carousel-item .carousel-caption {
   position: initial;
   width: 50%;
+  text-shadow: 1px 1px 2px #fff;
 }
 
 header .carousel-inner .carousel-item .carousel-caption h2 {
@@ -148,11 +149,11 @@ header .carousel-inner .carousel-item .buttons a {
   padding: 10px 15px;
   font-size: 25px;
   letter-spacing: 1.5px;
-  background-color: #0A66C2;
+  background-color: #fff;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
-  border: none;
+  border: 2px solid #161c4c;
 }
 
 header .carousel-inner .carousel-item .buttons a::before,
@@ -160,7 +161,7 @@ header .carousel-inner .carousel-item .buttons a::after {
     content: "";
     width: 100%;
     height: 50%;
-    background-image: linear-gradient(to right, #554023, #c99846);
+    background-color: #161c4c;
     position: absolute;
     left: 0;
     transition-duration: .5s;
@@ -182,9 +183,16 @@ header .carousel-inner .carousel-item .buttons a:hover::after {
 }
 
 header .carousel-inner .carousel-item .buttons a span {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
+    font-weight: bolder;
+    color: #161c4c;
+    transition-duration: .5s;
 }
+
+header .carousel-inner .carousel-item .buttons a:hover span {
+    color: #fff;
+} 
 
 /* About Section */
     /* Description Part */
@@ -225,7 +233,7 @@ header .carousel-inner .carousel-item .buttons a span {
   transform: translateY(-30px);
   text-align: center;
   padding-block: 5px;
-  background-color: #144;
+  background-color: #161c4c;
   color: #fff;
   width: 100%;
   transform: translateX(100%);
@@ -239,7 +247,7 @@ header .carousel-inner .carousel-item .buttons a span {
 
         /* Media Icons */
 #About .container .box .content .icons {
-  display: flex; /* Why !!! */
+  display: flex;
   column-gap: 20px;
   transform: translateY(0px);
 }
@@ -295,7 +303,7 @@ header .carousel-inner .carousel-item .buttons a span {
     content: "";
     width: 100%;
     height: 100%;
-    border-width: 25px;
+    border-width: 26px;
     border-color: #c99846 transparent #c99846 #c99846 ;
     border-style: solid;
     position: absolute;
@@ -306,7 +314,7 @@ header .carousel-inner .carousel-item .buttons a span {
 
 #About .container .box .content .image .button::before {
     left: -100%;
-    border-color: #c99846 transparent #c99846 #c99846;
+    border-color: #161c4c transparent #161c4c #161c4c;
 }
 
 #About .container .box .content .image .button button span {
@@ -316,7 +324,7 @@ header .carousel-inner .carousel-item .buttons a span {
 
 #About .container .box .content .image .button::after {
     left: 100%;
-    border-color: #c99846 #c99846 #c99846 transparent;
+    border-color: #161c4c #161c4c #161c4c transparent;
 }
 
 #About .container .box .content .image .button:hover::before,
@@ -340,12 +348,19 @@ header .carousel-inner .carousel-item .buttons a span {
 }
 
 #About .container .box .content .image .button button {
-  background-color: var(--bs-primary);
-  color: #fff;
+  background-color: #fff;
+    color: #161c4c;
+    border: 2px solid #161c4c;
   padding: 5px 10px;
   font-size: 25px;
   letter-spacing: 1px;
   display: block;
+  transition-duration: .5s;
+}
+
+#About .container .box .content .image .button:hover button {
+    color: #fff;
+    background-color: #161c4c;
 }
 
 #About .container .box .content .button button i {
@@ -377,8 +392,13 @@ header .carousel-inner .carousel-item .buttons a span {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* #Achievements .title h2 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #fff;
+} */
+
 #Achievements .container-fluid {
-    height: 515px;
+    min-height: 526px;
     position: relative;
 } 
 
@@ -460,6 +480,12 @@ header .carousel-inner .carousel-item .buttons a span {
     background-color: #000;
 }
 
+#Servieces .s-card .text p {
+    /* width: 95%;
+    margin: auto;
+    padding: 5px; */
+}
+
          /* Mix Colors */
 #Servieces .s-card .text::before {
     content: "";
@@ -524,7 +550,7 @@ header .carousel-inner .carousel-item .buttons a span {
 #Race .title h2 {
     text-shadow: 3px 3px 5px #fff;
     font-size: 60px;
-    word-spacing: 10px;
+    word-spacing: 5px;
 }
 
 #Race .title h4 {
@@ -563,6 +589,11 @@ header .carousel-inner .carousel-item .buttons a span {
 
 /* Contact Section */
     /* Form Group */
+#Contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
 #Contact .form-group textarea {
     resize: none;                     /* .form-group => Do not respect :hover and :foucs !!!!!! */
 } 
@@ -571,13 +602,13 @@ header .carousel-inner .carousel-item .buttons a span {
     padding: 10px 20px;
     font-size: 30px;
     letter-spacing: 1.5px;
-    background-color: #0A66C2;
+    background-color: #161c4c;
     color: #fff;
     transition-duration: .5s;
 }
 
 #Contact .form-group button:hover {
-    color: #000;
+    color: #161c4c;
     background-color: #fff;
 }
 

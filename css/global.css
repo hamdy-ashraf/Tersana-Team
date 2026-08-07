@@ -28,7 +28,7 @@ p {
 }
 
 .title h2 {
-    border: 1px solid transparent;
+    text-shadow: 1px 1px 1px #fff;
 }
 
 a {
