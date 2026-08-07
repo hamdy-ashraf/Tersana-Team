@@ -89,6 +89,7 @@ header .carousel-inner .carousel-item {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100dvh;
 }
 
 header .carousel-inner .carousel-item::before {
